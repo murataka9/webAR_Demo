@@ -9,13 +9,13 @@
 <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
     <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
     <a-assets>
-        <a-asset-item id="eyeball-obj" src="model_obj/eyeball/eyeball.obj"></a-asset-item>
-        <a-asset-item id="eyeball-mtl" src="model_obj/eyeball/eyeball.mtl"></a-asset-item>
+        <a-asset-item id="eyeball-obj" src="model_obj/bunny/13189_bunny_V2_NEW.obj"></a-asset-item>
+        <a-asset-item id="eyeball-mtl" src="model_obj/bunny/Blank.mtl"></a-asset-item>
     </a-assets>
 　　　　　　　　<!-- こっからARの世界。マーカー上になにを展開するかを書く -->
     <a-marker preset="hiro">
         <a-obj-model id="eyeball" src="#eyeball-obj" mtl="#eyeball-mtl" position="0 0 0" scale="1.0 1.0  1.0" rotation="0 0 0"></a-obj-model>
-        <a-text value="Special eye!!!" position="0 1.0 0" align="center"></a-text>
+        <a-text value="Special bunny!!!" position="0 1.0 0" align="center"></a-text>
     </a-marker>
     <!-- arなのでこんな感じでカメラが必要らしい。 -->
     <a-entity camera></a-entity>
